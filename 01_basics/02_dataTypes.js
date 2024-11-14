@@ -26,3 +26,5 @@ let state;
 // object 
 
 console.log( typeof name )
+console.log( typeof undefined); // undefined
+console.log(typeof null); // object
