@@ -40,3 +40,32 @@ console.log(typeof heros);
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// numbers,boolean sab jate hai stack ke andar stack ke andar uska copy hi milta hai, 
+// lekin ham heap ke andar value rakhte hai to hame uska refrance hi milta hai reafrance se mtlb hai jo changes krte hai original  value se hi hote hai
+
+Stack (Premitive), Heap (Non-Premitive)
+
+let myYoutubename = "AnandmohanYoutube"
+
+let anothername = myYoutubename
+anothername = "ananmohanji"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "anand@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
